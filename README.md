@@ -1,6 +1,6 @@
 # slidespeak-webapp
 
-![slidespeak-banner-github](https://github.com/SlideSpeak/slidespeak-webapp/assets/5519740/90b8fb74-2f0d-40bc-8ecd-1e4d3a40847a)
+![slidespeak-banner-github](https://github.com/SlideSpeak/slidespeak-webapp/assets/5519740/8ea56893-3c7a-42ee-906c-01e5797287af)
 
 SlideSpeak allows you to chat with your PowerPoint slides. Upload any PPTX file and ask questions about the content.
 
