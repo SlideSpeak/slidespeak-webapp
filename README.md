@@ -1,4 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# slidespeak-webapp
+
+![slidespeak-banner-github](https://github.com/SlideSpeak/slidespeak-webapp/assets/5519740/90b8fb74-2f0d-40bc-8ecd-1e4d3a40847a)
+
+SlideSpeak allows you to chat with your PowerPoint slides. Upload any PPTX file and ask questions about the content.
+
+SlideSpeak was built with:
+
+Frontend:
+
+- [NextJS](https://nextjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [React Chat Stream](https://github.com/XD2Sketch/react-chat-stream)
+
+The backend for this project is available here: [https://github.com/SlideSpeak/slidespeak-backend](https://github.com/SlideSpeak/slidespeak-backend)
+
+## Requirments
+
+_NOTE:_ This project requires the SlideSpeak backend to be up and running!
+
+See [here](https://github.com/SlideSpeak/slidespeak-backend) on how to setup the backend.
 
 ## Getting Started
 
@@ -11,30 +31,10 @@ cp .env.local.example .env.local
 First, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+See LICENSE file.
