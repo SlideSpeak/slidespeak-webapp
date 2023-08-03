@@ -74,7 +74,7 @@ const ChatDialogInput: FC<ChatDialogInputProps> = ({
         type="text"
         placeholder="Ask me anything..."
       />
-      <div className="absolute right-3 top-[50%] translate-y-[-50%]">
+      <div className="absolute right-3 top-[50%] translate-y-[-50%] h-full flex flex-row justify-center">
         {isLoading ? (
           <LoadingBubbles />
         ) : (
