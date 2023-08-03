@@ -69,7 +69,7 @@ const Home = () => {
               documents={documents}
             />
           </div>
-          <div className="lg:w-[50%] bg-gray-100 h-full">
+          <div className="lg:w-[50%] bg-gray-100 lg:h-full lg:max-h-full sm:max-h-96">
             <ChatDialog activeDocument={activeDocument} />
           </div>
         </div>
