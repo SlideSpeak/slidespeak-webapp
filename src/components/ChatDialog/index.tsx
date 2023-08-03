@@ -30,14 +30,17 @@ const ChatDialog: FC<ChatDialogProps> = ({ activeDocument }) => {
         <hr className="mb-4" />
       </div>
 
-      <div className="overflow-y-auto">
-        {chatHistory.map(message => (
-          <ChatMessageView
-            message={message.content}
-            sender={message.role}
-            key={message.id}
-          />
-        ))}
+      <div className="overflow-y-auto flex flex-col-reverse">
+        {chatHistory
+          .slice(0)
+          .reverse()
+          .map(message => (
+            <ChatMessageView
+              message={message.content}
+              sender={message.role}
+              key={message.id}
+            />
+          ))}
       </div>
 
       <div className="lg:mt-auto mt-10 p-6">
