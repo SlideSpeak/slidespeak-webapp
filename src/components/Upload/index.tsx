@@ -145,13 +145,15 @@ const Upload: FC<UploadProps> = ({
       >
         <input {...getInputProps()} />
         {uploadInProgress ? (
-          <div className="flex flex-col gap-3 items-center">
+          <div className="flex flex-col gap-3 items-center max-w-full">
             {uploadPercentage !== 100 ? (
               <PercentageLoader percentage={uploadPercentage} />
             ) : (
               <LoadingSpinner />
             )}
-            <span className="text-sm text-gray-500">{filename}</span>
+            <span className="text-sm text-gray-500 px-4 truncate whitespace-nowrap max-w-full">
+              {filename}
+            </span>
           </div>
         ) : (
           <>
