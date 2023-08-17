@@ -151,7 +151,9 @@ const Upload: FC<UploadProps> = ({
             ) : (
               <LoadingSpinner />
             )}
-            <span className="text-sm text-gray-500 px-4 truncate whitespace-nowrap max-w-full">{filename}</span>
+            <span className="text-sm text-gray-500 px-4 truncate whitespace-nowrap max-w-full">
+              {filename}
+            </span>
           </div>
         ) : (
           <>
