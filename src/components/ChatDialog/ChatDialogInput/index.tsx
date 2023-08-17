@@ -64,7 +64,10 @@ const ChatDialogInput: FC<ChatDialogInputProps> = ({
   return (
     <form
       className={classNames('w-full relative', font.className)}
-      onSubmit={handleSubmit}
+      onSubmit={() => {
+        if (inputIsEmpty) return;
+        handleSubmit();
+      }}
     >
       <input
         disabled={isLoading}
@@ -74,12 +77,13 @@ const ChatDialogInput: FC<ChatDialogInputProps> = ({
         type="text"
         placeholder="Ask me anything..."
       />
-      <div className="absolute right-3 top-[50%] translate-y-[-50%] h-full flex flex-row justify-center">
+      <div className="absolute right-3 top-[50%] translate-y-[-50%] h-full flex flex-row justify-center items-center">
         {isLoading ? (
           <LoadingBubbles />
         ) : (
           <button
             type="submit"
+            disabled={inputIsEmpty}
             className={classNames('cursor-pointer', {
               'cursor-not-allowed opacity-50': inputIsEmpty,
             })}
