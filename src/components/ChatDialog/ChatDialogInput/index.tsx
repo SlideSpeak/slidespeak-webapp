@@ -64,9 +64,9 @@ const ChatDialogInput: FC<ChatDialogInputProps> = ({
   return (
     <form
       className={classNames('w-full relative', font.className)}
-      onSubmit={() => {
+      onSubmit={(e) => {
         if (inputIsEmpty) return;
-        handleSubmit();
+        handleSubmit(e);
       }}
     >
       <input
